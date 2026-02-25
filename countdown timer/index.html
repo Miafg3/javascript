@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Countdown Clock</h1>
+
+            <section id="clock" aria-live="polite">
+                <div class="time-block">
+                    <span class="value days">0</span>
+                    <span class="label">Days</span>
+                </div>
+
+                <div class="time-block">
+                    <span class="value hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+
+                <div class="time-block">
+                    <span class="value minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+
+                <div class="time-block">
+                    <span class="value seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </section>
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>

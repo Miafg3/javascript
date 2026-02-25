@@ -1,0 +1,52 @@
+body {
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background: #6495ed;
+    justify-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+  
+.wrapper {
+    padding: 2rem;
+    width: 400px;
+    border-radius: 20px;
+    background: #000365;
+}
+  
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+  
+#task {
+    flex: 1;
+    padding: 8px;
+}
+  
+#add {
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    background: #ff0000;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+  
+li {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+  
+.remove {
+    border: none;
+    cursor: pointer;
+    background: #f2f205;
+}

@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background: #b6b7b8;
+    justify-content: center;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+  
+.container {
+    text-align: center;
+}
+  
+h1 {
+    color: #1F5A56;
+    margin-bottom: 2rem;
+}
+  
+#clock {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.time-block {
+    padding: 1.5rem;
+    color: #ffffff;
+    min-width: 100px;
+    border-radius: 10px;
+    background: #1F5A56;
+}
+  
+.value {
+    padding: 1rem;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: #000;
+    border-radius: 6px;
+}
+  
+.label {
+    opacity: 0.85;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
