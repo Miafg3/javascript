@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: #218872;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 3px;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  background-color: #667eea;
+}
+
+#generate-btn {
+  border: none;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.2s;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  margin: 0 auto 2rem auto;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+#generate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(102, 126, 234, 0.3);
+}
+
+.palette {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.color-card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-card:hover {
+  transform: translateY(-5px);
+}
+
+.color-preview {
+  height: 120px;
+  cursor: pointer;
+}
+
+.color-meta {
+  display: flex;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-meta span {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.copy-btn {
+  border: none;
+  cursor: pointer;
+  color: #64748b;
+  background: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.copy-btn:hover {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+
+  .palette {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  
+}
